@@ -1,0 +1,46 @@
+{
+  "name": "rn-2048",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "react-native run-ios",
+    "ts:watch": "npm run tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.4.1",
+    "react-native": "0.56.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/react": "^16.4.7",
+    "@types/react-native": "^0.56.5",
+    "@types/react-test-renderer": "^16.0.1",
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "^5",
+    "jest": "23.4.2",
+    "react-native-typescript-transformer": "^1.2.10",
+    "react-test-renderer": "16.4.1",
+    "ts-jest": "^23.1.2",
+    "typescript": "^3.0.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ]
+  }
+}
